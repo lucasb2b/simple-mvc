@@ -6,6 +6,7 @@
 <p> <%= product.quantidade  %> </p>
 
 <%= link_to "Detalhes do produto", product %> <br>
-<%= link_to "Editar o produto selecionado", edit_product_path(product) %>
+<%= link_to "Editar o produto selecionado", edit_product_path(product) %> <br>
+<%= link_to "Apagar produto", product, method: :delete, data: { confirm: "Você tem certeza que quer apagar?"} %>
 
 <% end %>
